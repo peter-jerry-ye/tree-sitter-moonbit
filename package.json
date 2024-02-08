@@ -16,6 +16,7 @@
     "nan": "^2.18.0"
   },
   "devDependencies": {
+    "@types/node": "^20.11.16",
     "tree-sitter-cli": "^0.20.8"
   }
 }

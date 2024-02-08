@@ -20,6 +20,7 @@ const
   multiplicative_operators = ['*', '/', '%'],
   additive_operators = ['+', '-'],
   comparative_operators = ['>', '>=', '<=', '<', '==', '!='],
+  pipe_operator = '|>',
 
   terminator = choice('\n', ';', '\0')
 
