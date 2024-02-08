@@ -20,7 +20,6 @@ const
   multiplicative_operators = ['*', '/', '%'],
   additive_operators = ['+', '-'],
   comparative_operators = ['>', '>=', '<=', '<', '==', '!='],
-  pipe_operator = '|>',
 
   terminator = choice('\n', ';', '\0')
 
@@ -266,6 +265,7 @@ module.exports = grammar({
 
     binary_expression: $ => {
       const table = [
+        [PREC.apply, '|>'],
         [PREC.multiplicative, choice(...multiplicative_operators)],
         [PREC.additive, choice(...additive_operators)],
         [PREC.comparative, choice(...comparative_operators)],
